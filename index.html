@@ -20,13 +20,15 @@
     <div id="App">
         <div class="container">
             <div id="carousel">
-                <i id="up" class="fa-solid fa-chevron-up"></i>
+                <i id="up" class="fa-solid fa-chevron-up" @click="goToNext()"></i>
                    <div id="galery">
                     <img v-bind:src="cards[currentIndex].image" alt="...">
-                    <h5>{{cards[currentIndex].title}}</h5>
-                    <p>{{cards[currentIndex].text}}</p>
+                    <div class="text-white py-5">
+                        <h5>{{cards[currentIndex].title}}</h5>
+                        <p>{{cards[currentIndex].text}}</p>
+                    </div>
                    </div>
-                <i id="donw" class="fa-solid fa-chevron-down"></i>
+                <i id="donw" class="fa-solid fa-chevron-down" @click="goToPrev()"></i>
             </div>
         </div>
     </div>

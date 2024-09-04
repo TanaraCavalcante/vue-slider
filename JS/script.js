@@ -34,5 +34,22 @@ const {createApp} = Vue;
 
         }
     }, 
-    method
+   methods: {
+    goToNext() {
+        if(this.currentIndex === this.cards.length - 1){
+            this.currentIndex = 0;
+            return;
+        }else{
+            this.currentIndex++
+        }
+    },
+    goToPrev() {
+        if(this.currentIndex === 0){
+            this.currentIndex = this.cards.length - 1;
+            return;
+        }else{
+            this.currentIndex--
+        }
+    }
+   }
 }).mount('#App')

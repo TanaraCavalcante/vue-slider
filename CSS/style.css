@@ -14,10 +14,9 @@ body{
 }
 
 #carousel{
-    width: 800px;
+    width: 600px;
     height: 350px;
     margin: 70px auto;
-    border: 3px dashed rgb(0, 255, 17);
     position: relative;
 }
 
@@ -30,9 +29,7 @@ body{
     height: 100%;
     object-fit: cover;
     object-position: center;
-
 }
-
 
 
 /* -------- ARROW --------- */
