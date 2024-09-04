@@ -33,4 +33,4 @@ const {createApp} = Vue;
             ],
         }
     }, 
-}).mount('#app')
+}).mount('#App')
