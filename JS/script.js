@@ -1,8 +1,9 @@
-const {creatApp} = Vue
+const {creatApp} = Vue;
 
 creatApp ({
     data(){
         return {
+            currentIndex = 0,
             cards:[
                 {
                     image: 'img/01.webp',
@@ -33,7 +34,22 @@ creatApp ({
         }
     },
     methods: {
-        
+        goToPrev(){
+            if(this.currentIndex === 0){
+                this.currentIndex = this.cards.length - 1;
+                return;
+            }else{
+                this.currentIndex--;
+            }
+        },
+        goToNext(){
+            if(this.currentIndex === this.cards.length - 1){
+                this.currentIndex = 0;
+                return;
+            }else{
+                this.currentIndex++;
+            }
+        },
     }
     
 }).mount('#app')
