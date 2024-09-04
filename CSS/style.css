@@ -4,19 +4,21 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: gray;
-}
+
 
 .container{
     width: 1000px;
     margin: 0 auto;
 }
 
+h1{
+    margin-top: 20px;
+}
+
 #carousel{
-    width: 600px;
-    height: 350px;
-    margin: 70px auto;
+    width: 650px;
+    height: 400px;
+    margin: 30px auto;
     position: relative;
 }
 
@@ -29,6 +31,7 @@ body{
     height: 100%;
     object-fit: cover;
     object-position: center;
+    box-shadow: 5px 5px 10px black;
 }
 
 

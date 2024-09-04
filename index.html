@@ -19,11 +19,12 @@
 <body>
     <div id="App">
         <div class="container">
+            <h1 class="text-center">Cine Movies</h1>
             <div id="carousel">
                 <i id="up" class="fa-solid fa-chevron-up" @click="goToNext()"></i>
                    <div id="galery">
                     <img v-bind:src="cards[currentIndex].image" alt="...">
-                    <div class="text-white py-5">
+                    <div class="py-5">
                         <h5>{{cards[currentIndex].title}}</h5>
                         <p>{{cards[currentIndex].text}}</p>
                     </div>
